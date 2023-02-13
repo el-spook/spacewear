@@ -3,9 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// import the BrowserRouter so that Links, Routes, and Route will all work:
 import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// Wrap the app in the BrowserRouter tag:
 root.render(
   <React.StrictMode>
     <BrowserRouter>

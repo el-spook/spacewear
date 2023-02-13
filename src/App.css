@@ -51,6 +51,7 @@ equally spaced and wrap. */
 #welcome {
   color: white;
   text-align: center;
+  font-size: 24px;
 } 
 
 
@@ -96,24 +97,78 @@ nav a {
   padding-bottom: 2px;
   border-bottom: black solid 1px;
 }
-
 nav {
   background-color: black;
   border-radius: 10px;
 }
-
 #navigation {
   padding: 13px 10px 10px 10px;
   display: flex;
   justify-content: flex-end;
-
 }
-
+/* Underline the links on hover: */
 nav a:hover {
   border-bottom: red solid 1px;
 }
 
 
+/* Styles for the Profile component: */
+
+/* Centre the two elements, create space, and style the button: */
+.logIn h3 {
+  text-align: center;
+  margin-top: 60px;
+}
+.logInButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.logInButton button {
+  padding: 10px;
+  font-weight: bold;
+  background-color: rgb(0, 17, 124);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+
+/* Styles for the Calculator component: */
+
+.calcInterest h2 {
+  color: white;
+}
+#interestPara {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+/* Style the form: */
+.calcForm input {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  padding: 5px;
+}
+.calcForm label {
+  color: white;
+}
+.calcForm {
+  margin-bottom: 50px;
+}
+/* Create a card effect for the calculator div: */
+#calculator {
+  background-color: black;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 450px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#calculation h3,
+#calculation h4 {
+  color: white;
+}
 
 
 /* When the screen-width is less than 900px, change the header so that one logo
@@ -134,20 +189,18 @@ disappears, and the other two elements are stacked and centred: */
   }
   #signIn {
     margin-top: 10px;
-  }
-
-
-  
+  } 
 }
 
+/* When the screen-width is less than 450px, change the nav bar so that it is centred
+and the font size and spacing is smaller: */
 @media screen and (max-width: 450px) {
   #navigation a {
-    font-size: 12px;
+    font-size: 14px;
     margin-right: 5px;
     margin-left: 5px;
 
   }
-
   #navigation {
     justify-content: center;
   }

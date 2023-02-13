@@ -7,11 +7,11 @@ function Welcome(props) {
     )
 }
 
-// A functional component that returns an button:
+// A functional component that returns an h1 saying how to sign in:
 function SignUp() {
     return (
         <div>
-            <button id= "signIn" type="button">Sign In</button>
+            <h1 id="welcome">Log in on your profile page</h1>
         </div>
     )
 }
@@ -20,11 +20,12 @@ function SignUp() {
 function LoggedIn(props) {
     const logged = props.isLoggedIn;
     const userName = props.name;
+
     // If the user is logged in, return the Welcome component. If not, return the SignUp component.
     if (logged === true) {
         return <Welcome name={userName} />
     } else {
-        return <SignUp />
+        return <SignUp  />
     }
 }
 
